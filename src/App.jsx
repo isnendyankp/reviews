@@ -9,14 +9,14 @@ const App = () => {
     <main>
       <article className="review">
         <div className="img-container">
-          <img src={image} alt={name} className='person-img' />
-          <span className='quote-icon'>
+          <img src={image} alt={name} className="person-img" />
+          <span className="quote-icon">
             <FaChevronRight />
           </span>
         </div>
-        <h4>{name}</h4>
-        <p>{job}</p>
-        <p>{text}</p>
+        <h4 className="author">{name}</h4>
+        <p className="job">{job}</p>
+        <p className="info">{text}</p>
       </article>
     </main>
   );
@@ -33,3 +33,4 @@ export default App;
 // - Accessing property image & name at img structure
 // - cr8 span with accessing FaChevronRight react icon
 // - Cr8 h4 & p with acccessing name, job & text properties 
+// - Add className for properties name, job & text

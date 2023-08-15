@@ -5,11 +5,14 @@ import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
 const App = () => {
   const [index, setIndex] = useState(0);
   const { name, job, image, text } = people[index];
-  return(
-    <div>
-      <h2>Review Starter</h2>
-      <FaBeer classnName='beer' />
-    </div>
+  return (
+    <main>
+      <article className="review">
+        <div className="img-container">
+          <img src="" alt="" />
+        </div>
+      </article>
+    </main>
   );
 };
 export default App;
@@ -20,3 +23,4 @@ export default App;
 // - import state, Faber & navigate Faber to return
 // - learn using FaBeer wtih cr8 className beer & styling it
 // - change import react icon to FaChevronLeft, FaChevronRight, FaQuoteRight
+// - cr8 new base structure on return

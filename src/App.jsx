@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import people from './data';
-import { FaBeer } from 'react-icons/fa';
+import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
 
 const App = () => {
   const [index, setIndex] = useState(0);
@@ -19,3 +19,4 @@ export default App;
 // - cr8 destructing assignment from object people. make object people have many properties (name, job,img, text)
 // - import state, Faber & navigate Faber to return
 // - learn using FaBeer wtih cr8 className beer & styling it
+// - change import react icon to FaChevronLeft, FaChevronRight, FaQuoteRight

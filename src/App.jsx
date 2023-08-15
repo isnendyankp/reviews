@@ -9,7 +9,7 @@ const App = () => {
     <main>
       <article className="review">
         <div className="img-container">
-          <img src="" alt="" />
+          <img src={image} alt={name} className='person-img' />
         </div>
       </article>
     </main>
@@ -24,3 +24,4 @@ export default App;
 // - learn using FaBeer wtih cr8 className beer & styling it
 // - change import react icon to FaChevronLeft, FaChevronRight, FaQuoteRight
 // - cr8 new base structure on return
+// - Accessing property image & name at img structure

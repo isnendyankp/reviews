@@ -10,6 +10,9 @@ const App = () => {
       <article className="review">
         <div className="img-container">
           <img src={image} alt={name} className='person-img' />
+          <span className='quote-icon'>
+            <FaChevronRight />
+          </span>
         </div>
       </article>
     </main>
@@ -25,3 +28,4 @@ export default App;
 // - change import react icon to FaChevronLeft, FaChevronRight, FaQuoteRight
 // - cr8 new base structure on return
 // - Accessing property image & name at img structure
+// - cr8 span with accessing FaChevronRight react icon 

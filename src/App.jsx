@@ -14,6 +14,9 @@ const App = () => {
             <FaChevronRight />
           </span>
         </div>
+        <h4>{name}</h4>
+        <p>{job}</p>
+        <p>{text}</p>
       </article>
     </main>
   );
@@ -28,4 +31,5 @@ export default App;
 // - change import react icon to FaChevronLeft, FaChevronRight, FaQuoteRight
 // - cr8 new base structure on return
 // - Accessing property image & name at img structure
-// - cr8 span with accessing FaChevronRight react icon 
+// - cr8 span with accessing FaChevronRight react icon
+// - Cr8 h4 & p with acccessing name, job & text properties 

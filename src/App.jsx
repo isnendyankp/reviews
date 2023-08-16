@@ -28,10 +28,10 @@ const App = () => {
         <p className="info">{text}</p>
         <div className="btn-container">
           <button className="prev-btn" onClick={prevPerson}>
-            
+            <FaChevronLeft />
           </button>
           <button className="next-btn" onClick={nextPerson}>
-            
+            <FaChevronRight />
           </button>
         </div>
       </article>
@@ -53,3 +53,4 @@ export default App;
 // - Add className for properties name, job & text
 // - cr8 base nextPerson & prevPerson for placeholder function
 // - cr8 button onclick for nextPerson & prevPerson
+// - Accessing react icon with FaChevronLeft for button prevPerson & FaChevronRight for button nextPerson

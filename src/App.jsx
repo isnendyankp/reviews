@@ -26,6 +26,14 @@ const App = () => {
         <h4 className="author">{name}</h4>
         <p className="job">{job}</p>
         <p className="info">{text}</p>
+        <div className="btn-container">
+          <button className="prev-btn" onClick={prevPerson}>
+            
+          </button>
+          <button className="next-btn" onClick={nextPerson}>
+            
+          </button>
+        </div>
       </article>
     </main>
   );
@@ -44,3 +52,4 @@ export default App;
 // - Cr8 h4 & p with acccessing name, job & text properties 
 // - Add className for properties name, job & text
 // - cr8 base nextPerson & prevPerson for placeholder function
+// - cr8 button onclick for nextPerson & prevPerson

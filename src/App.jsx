@@ -7,7 +7,9 @@ const App = () => {
   const { name, job, image, text } = people[index];
 
   const nextPerson = () => {
-    setIndex((index) => {});
+    setIndex((currentIndex) => {
+      const newIndex = currentIndex + 1;
+    });
   };
 
    const prevPerson = () => {
@@ -55,3 +57,4 @@ export default App;
 // - cr8 button onclick for nextPerson & prevPerson
 // - Accessing react icon with FaChevronLeft for button prevPerson & FaChevronRight for button nextPerson
 // - cr8 base call function setIndex & callback function with parameter index
+// - Add argument sign newIndex

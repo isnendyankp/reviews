@@ -9,6 +9,7 @@ const App = () => {
   const nextPerson = () => {
     setIndex((currentIndex) => {
       const newIndex = currentIndex + 1;
+      return newIndex;
     });
   };
 
@@ -58,3 +59,4 @@ export default App;
 // - Accessing react icon with FaChevronLeft for button prevPerson & FaChevronRight for button nextPerson
 // - cr8 base call function setIndex & callback function with parameter index
 // - Add argument sign newIndex
+// - setup return for nextPerson

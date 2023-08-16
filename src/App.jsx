@@ -5,6 +5,15 @@ import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
 const App = () => {
   const [index, setIndex] = useState(0);
   const { name, job, image, text } = people[index];
+
+  const nextPerson = () => {
+
+  };
+
+   const prevPerson = () => {
+
+  };
+
   return (
     <main>
       <article className="review">
@@ -34,3 +43,4 @@ export default App;
 // - cr8 span with accessing FaChevronRight react icon
 // - Cr8 h4 & p with acccessing name, job & text properties 
 // - Add className for properties name, job & text
+// - cr8 base nextPerson & prevPerson for placeholder function

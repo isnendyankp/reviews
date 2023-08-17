@@ -18,14 +18,14 @@ const App = () => {
   const nextPerson = () => {
     setIndex((currentIndex) => {
       const newIndex = currentIndex + 1;
-      return newIndex;
+     return checkNumber(newIndex);
     });
   };
 
    const prevPerson = () => {
      setIndex((currentIndex) => {
        const newIndex = currentIndex - 1;
-       return newIndex;
+       return checkNumber(newIndex);
      });
    };
 
@@ -76,3 +76,4 @@ export default App;
 // - Fix bug logic on nextPerson
 // - Fix bug logic on prevPerson
 // - Cr8 funct checkNumber for nextPerson & prevPerson
+// - pass in checkNumber on return

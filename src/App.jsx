@@ -9,6 +9,9 @@ const App = () => {
   const nextPerson = () => {
     setIndex((currentIndex) => {
       const newIndex = currentIndex + 1;
+      if (newIndex > people.length -1) {
+        return 0;
+      }
       return newIndex;
     });
   };
@@ -64,3 +67,4 @@ export default App;
 // - Add argument sign newIndex
 // - setup return for nextPerson
 // - Add call function setIndex, argument, return for prevPerson
+// - Fix bug logic on nextPerson

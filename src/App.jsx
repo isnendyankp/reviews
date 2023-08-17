@@ -14,8 +14,11 @@ const App = () => {
   };
 
    const prevPerson = () => {
-
-  };
+     setIndex((currentIndex) => {
+       const newIndex = currentIndex - 1;
+       return newIndex;
+     });
+   };
 
   return (
     <main>
@@ -60,3 +63,4 @@ export default App;
 // - cr8 base call function setIndex & callback function with parameter index
 // - Add argument sign newIndex
 // - setup return for nextPerson
+// - Add call function setIndex, argument, return for prevPerson

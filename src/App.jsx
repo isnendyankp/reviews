@@ -29,6 +29,10 @@ const App = () => {
      });
    };
 
+   const randomPerson = () =>{
+
+   }
+
   return (
     <main>
       <article className="review">
@@ -81,3 +85,4 @@ export default App;
 // - Cr8 funct checkNumber for nextPerson & prevPerson
 // - pass in checkNumber on return
 // - S7-187:Cr8 button randomPerson structure
+// 

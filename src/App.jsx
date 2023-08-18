@@ -30,7 +30,7 @@ const App = () => {
    };
 
    const randomPerson = () =>{
-
+    let randomNumber = Math.floor(Math.random() * people.length);
    }
 
   return (
@@ -85,4 +85,4 @@ export default App;
 // - Cr8 funct checkNumber for nextPerson & prevPerson
 // - pass in checkNumber on return
 // - S7-187:Cr8 button randomPerson structure
-// 
+// - S7-187:Cr8 variable randomNumber equal math.random

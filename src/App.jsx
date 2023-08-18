@@ -49,6 +49,9 @@ const App = () => {
             <FaChevronRight />
           </button>
         </div>
+        <button className="btn btn-hipster" onClick={randomPerson}>
+          surprise me
+        </button>
       </article>
     </main>
   );
@@ -77,3 +80,4 @@ export default App;
 // - Fix bug logic on prevPerson
 // - Cr8 funct checkNumber for nextPerson & prevPerson
 // - pass in checkNumber on return
+// - S7-187:Cr8 button randomPerson structure

@@ -29,9 +29,13 @@ const App = () => {
      });
    };
 
-   const randomPerson = () =>{
-    let randomNumber = Math.floor(Math.random() * people.length);
-   }
+   const randomPerson = () => {
+     let randomNumber = Math.floor(Math.random() * people.length);
+     if (randomNumber === index) {
+       randomNumber = index + 1;
+     }
+     
+   };
 
   return (
     <main>
@@ -86,3 +90,4 @@ export default App;
 // - pass in checkNumber on return
 // - S7-187:Cr8 button randomPerson structure
 // - S7-187:Cr8 variable randomNumber equal math.random
+// - S7-187:Cr8 conditional state for randomNumber

@@ -34,7 +34,7 @@ const App = () => {
      if (randomNumber === index) {
        randomNumber = index + 1;
      }
-     
+     setIndex(checkNumber(randomNumber));
    };
 
   return (
@@ -91,3 +91,4 @@ export default App;
 // - S7-187:Cr8 button randomPerson structure
 // - S7-187:Cr8 variable randomNumber equal math.random
 // - S7-187:Cr8 conditional state for randomNumber
+// - S7-187:setup setIndex with randomNumber include checkNumber

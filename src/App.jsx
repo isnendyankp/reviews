@@ -5,27 +5,17 @@ import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
 const App = () => {
   const [index, setIndex] = useState(0);
   const { name, job, image, text } = people[index];
-  const checkNumber = (number) => {
-    if (number > people.length - 1) {
-      return 0;
-    }
-    if (number < 0) {
-      return people.length - 1;
-    }
-    return number;
-  };
-
+  
   const nextPerson = () => {
     setIndex((currentIndex) => {
       const newIndex = currentIndex + 1;
-     return checkNumber(newIndex);
-    });
-  };
+     return ;
+  }
 
    const prevPerson = () => {
      setIndex((currentIndex) => {
        const newIndex = currentIndex - 1;
-       return checkNumber(newIndex);
+       return ;
      });
    };
 
@@ -34,7 +24,7 @@ const App = () => {
      if (randomNumber === index) {
        randomNumber = index + 1;
      }
-     setIndex(checkNumber(randomNumber));
+     
    };
 
   return (
@@ -92,3 +82,4 @@ export default App;
 // - S7-187:Cr8 variable randomNumber equal math.random
 // - S7-187:Cr8 conditional state for randomNumber
 // - S7-187:setup setIndex with randomNumber include checkNumber
+// - S7-188:Remove checknumber for set moduls operator

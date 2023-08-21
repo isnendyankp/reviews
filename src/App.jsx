@@ -5,12 +5,19 @@ import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
 const App = () => {
   const [index, setIndex] = useState(0);
   const { name, job, image, text } = people[index];
+
+  // learn moduls operator
+  // console.log(1 % 4); output 1
+  // console.log(2 % 4); output 2
+  // console.log(3 % 4); output 3
+  // console.log(4 % 4); output 0
   
   const nextPerson = () => {
     setIndex((currentIndex) => {
       const newIndex = currentIndex + 1;
      return ;
   }
+}
 
    const prevPerson = () => {
      setIndex((currentIndex) => {
